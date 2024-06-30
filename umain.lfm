@@ -1,0 +1,75 @@
+object Form1: TForm1
+  Left = 262
+  Height = 400
+  Top = 250
+  Width = 767
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 767
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  object Memo: TMemo
+    Left = 424
+    Height = 200
+    Top = 48
+    Width = 328
+    Font.Height = -24
+    Font.Name = 'Courier New'
+    Lines.Strings = (
+      'Memo'
+    )
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 767
+    Align = alTop
+    ClientHeight = 40
+    ClientWidth = 767
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    object LScore: TLabel
+      Left = 176
+      Height = 15
+      Top = 16
+      Width = 35
+      Caption = 'LScore'
+    end
+    object Button5: TButton
+      Left = 16
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Start'
+      TabOrder = 0
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Left = 96
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Desfazer'
+      TabOrder = 1
+      OnClick = Button6Click
+    end
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 144
+    Top = 256
+    Width = 767
+    Align = alBottom
+    Font.Height = -24
+    Font.Name = 'Courier New'
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+end
